@@ -1,0 +1,159 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #f2f2f2;
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+}
+
+nav {
+	margin-top: 20px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #333;
+	text-decoration: none;
+}
+
+main {
+	padding: 20px;
+}
+
+#menu-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu-list li {
+	background-color: #f2f2f2;
+	margin: 10px;
+	padding: 20px;
+	width: 300px;
+	text-align: center;
+	box-shadow: 0px 0px 5px #ccc;
+}
+
+#menu-list h3 {
+	margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  background-color: white;
+}
+
+label {
+  margin: 10px;
+  flex-basis: 100%;
+  color: black;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  flex-basis: 100%;
+  background-color: white;
+  color:green;
+  
+}
+
+input[type="number"] {
+  width: 50px;
+  background-color: white;
+  color: black;
+}
+
+button[type="submit"], button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	
+}
+
+button[type="submit"]:hover, button:hover {
+	background-color: #3e8e41;
+}
+
+#cart-items {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#cart-items li {
+	margin: 10px;
+	padding: 10px;
+	background-color: #f2f2f2;
+	box-shadow: 0px 0px 5px #ccc;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#cart-items li button {
+	background-color: #f44336;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+#cart-total {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	main {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	#menu {
+		flex-basis: 40%;
+	}
+	#order {
+		flex-basis: 40%;
+	}
+	#cart {
+		flex-basis: 18%;
+	}
+}
